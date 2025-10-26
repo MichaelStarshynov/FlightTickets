@@ -1,1 +1,1 @@
-**ReeadMe for TicketsFlight client side**
+**ReadMe for TicketsFlight client side**

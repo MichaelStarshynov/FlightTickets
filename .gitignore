@@ -1,2 +1,5 @@
-.env
+apikeys.js
 node_modules
+.gitignore
+.api
+credentials.json

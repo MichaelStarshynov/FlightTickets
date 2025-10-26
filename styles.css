@@ -1,0 +1,175 @@
+/* Общие стили */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+/* Контейнер приложения */
+#app {
+  width: 90%;
+  max-width: 600px;
+  margin-top: 30px;
+}
+
+/* Форма поиска */
+form#searchForm {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input, form button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+form button {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #45a049;
+}
+
+/* Результаты поиска */
+#results {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#results div {
+  background: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+#results div:hover {
+  transform: scale(1.02);
+}
+
+#results button {
+  margin-top: 10px;
+  background: #45a049;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#results button:hover {
+  background: #4caf50;
+}
+
+/* Оплата и билет */
+.payment-card, .ticket-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+.payment-card button, .ticket-card button {
+  margin-top: 15px;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.payment-card button:hover, .ticket-card button:hover {
+  background: #45a049;
+}
+
+/* Мобильная адаптивность */
+@media (max-width: 480px) {
+  form#searchForm, .payment-card, .ticket-card {
+    padding: 15px;
+  }
+
+  form input, form button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+/* Оплата */
+.payment-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+.payment-card button {
+  margin-top: 15px;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.payment-card button:hover {
+  background: #45a049;
+}
+
+/* Билет */
+.ticket-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+.ticket-card button {
+  margin-top: 15px;
+  background: #45a049;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.ticket-card button:hover {
+  background: #45a049;
+}
